@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  
+  --color-primary: #16a34a; /* green-600 */
+  --color-primary-hover: #15803d; /* green-700 */
+  --color-secondary: #f97316; /* orange-500 */
+}
+
+/* Custom Utilities */
+.btn-primary {
+  @apply bg-primary text-white hover:bg-primary-hover transition-colors font-medium py-2 px-4 rounded-lg;
+}
